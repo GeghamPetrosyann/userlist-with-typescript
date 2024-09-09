@@ -1,0 +1,98 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* UserList.css */
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f0f9ff, #cbebf6);
+  border-radius: 12px;
+}
+
+.user-card {
+  background: linear-gradient(145deg, #ffffff, #f0f4f7);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, #ffffff, #e1e7eb);
+  border-left: 5px solid #4caf50;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.user-age {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Adding some gradient animations to make the UI more dynamic */
+.user-list {
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background: linear-gradient(135deg, #f0f9ff, #cbebf6); }
+  50% { background: linear-gradient(135deg, #cbebf6, #f0f9ff); }
+  100% { background: linear-gradient(135deg, #f0f9ff, #cbebf6); }
+}
+
+.error {
+  color: red;
+}
